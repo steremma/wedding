@@ -20,15 +20,15 @@
   --olive-light: #A8B46A;
 
   /* Earth tones — text & surfaces */
-  --brown:       #2E1A0E;
-  --brown-mid:   #7A5840;
-  --brown-light: #A08060;
+  --brown:       #4A2C1A;
+  --brown-mid:   #8A6650;
+  --brown-light: #B09078;
   --white:       #FFFFFF;
 
   --shadow-sm:   0 4px 20px rgba(46,26,14,.08);
   --shadow-md:   0 8px 40px rgba(46,26,14,.14);
 
-  --f-script: 'Great Vibes', cursive;
+  --f-script: 'Pinyon Script', cursive;
   --f-serif:  'Playfair Display', Georgia, serif;
   --f-sans:   'Lato', -apple-system, sans-serif;
 
@@ -149,9 +149,9 @@ strong { color: var(--brown); font-weight: 600; }
   display: flex; align-items: center; justify-content: center;
   text-align: center;
   background:
-    radial-gradient(ellipse at 20% 80%, rgba(196,98,45,.28) 0%, transparent 52%),
-    radial-gradient(ellipse at 78% 22%, rgba(107,123,58,.18) 0%, transparent 50%),
-    linear-gradient(155deg, #1A0C05 0%, #3E1E0A 35%, #2B1508 65%, #100602 100%);
+    radial-gradient(ellipse at 25% 60%, rgba(232,140,80,.45) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 25%, rgba(107,123,58,.25) 0%, transparent 48%),
+    linear-gradient(155deg, #7A3018 0%, #B84E28 30%, #9A4020 65%, #6B2810 100%);
   overflow: hidden;
 }
 
@@ -294,7 +294,7 @@ strong { color: var(--brown); font-weight: 600; }
   border-top-color: var(--gold);
 }
 .detail-card--dark {
-  background: #3D4A1E;
+  background: #6B7B3A;
   border-top-color: var(--gold-light);
 }
 .detail-card--dark:hover { transform: translateY(-5px); }
@@ -451,7 +451,7 @@ strong { color: var(--brown); font-weight: 600; }
    FOOTER
    ============================================================ */
 footer {
-  background: #7A3018; color: var(--ivory);
+  background: #9B4020; color: var(--ivory);
   padding: 3.5rem 2rem; text-align: center;
 }
 .footer-names {
@@ -505,7 +505,7 @@ footer {
   .nav-links {
     display: none;
     position: fixed; inset: 0; z-index: 1000;
-    background: var(--brown);
+    background: #9B4020;
     flex-direction: column; align-items: center; justify-content: center;
     gap: 2.2rem;
   }
