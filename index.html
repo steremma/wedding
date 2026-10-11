@@ -138,14 +138,15 @@
                             </div>
                         </div>
                     </div>
-                    <a href="https://maps.google.com/?q=Πατριαρχικό+Θέρμης,+Θέση+Τρίμηνα,+Θέρμη+570+01,+Ελλάδα"
+                    <a href="https://maps.google.com/?cid=1777274249300851285"
                        target="_blank" rel="noopener noreferrer" class="btn btn--gold">
                         Open in Google Maps
                     </a>
                 </div>
                 <div class="venue-map reveal">
+                    <!-- Map zoom: the !1d value (metres) — larger = more zoomed out. !2d / !3d = centre lng / lat. -->
                     <iframe
-                        src="https://maps.google.com/maps?q=Πατριαρχικό+Θέρμης,+Θέση+Τρίμηνα,+Θέρμη+570+01,+Ελλάδα&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65989.95486823813!2d22.954527613652957!3d40.56662345141325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a84075a616ff55%3A0x18aa25836a06ba55!2zzprPhM6uzrzOsSDOnM-Fz4HPic69zq_OtM63!5e0!3m2!1sen!2sgr!4v1791728768492!5m2!1sen!2sgr"
                         width="100%" height="480" style="border:0;"
                         allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
@@ -278,18 +279,15 @@
                     <h3>Upload Your Photos</h3>
                     <p>After the big day, share your captures with us and all our guests. Every photo becomes part of our shared memory — we want to see the celebration from every angle.</p>
                     <!--
-                        PHOTO UPLOAD SETUP — pick one option and paste the link below:
-
-                        Option A — Dropbox File Request (guests upload without needing an account):
-                          dropbox.com → Files → Create → Request Files → copy link
-
-                        Option B — Google Photos Shared Album (guests add to a shared album):
-                          Google Photos → New album → Share → Allow others to add photos → copy link
+                        PHOTO UPLOAD SETUP — Google Photos shared album:
+                          photos.google.com → Albums → Create album → Share → Create link
+                          → album Options → turn on "Collaborate" → copy link
+                        Paste the link into PHOTO_ALBUM_URL in js/main.js.
                     -->
-                    <a href="#" class="btn btn--gold" id="uploadBtn" target="_blank" rel="noopener noreferrer">
+                    <a class="btn btn--gold" id="uploadBtn" target="_blank" rel="noopener noreferrer" aria-disabled="true">
                         Upload Your Photos
                     </a>
-                    <p class="photos-note">Photo uploads open on June 19, 2027</p>
+                    <p class="photos-note" id="photosNote">Photo uploads open on June 19, 2027</p>
                 </div>
             </div>
         </div>
